@@ -3,6 +3,10 @@ module Websocket
     module Io
       VERSION: String
       # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+      class Server
+        def self.start -> void
+      end
     end
   end
 end

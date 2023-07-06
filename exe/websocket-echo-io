@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "websocket/echo/io"
+
+Websocket::Echo::Io::Server.start
