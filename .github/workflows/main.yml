@@ -31,7 +31,10 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
     - name: Run the default task
-      run: bundle exec rake
+      # Not using `bundle exec` here because it loads gemspec and it in turn
+      # requires `version.rb` before simplecov is required.
+      # This prevents simplecov to cover `version.rb`.
+      run: rake
 
     - name: Generate Coverage Badge
       run: .github/workflows/bin/coverage_badge.sh
