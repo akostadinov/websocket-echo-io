@@ -1,7 +1,7 @@
 # Websocket::Echo::Io
 
 [![ruby-tests](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml/badge.svg)](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml)
-[![coverage](/../gh-pages/coverage/badge.svg)](https://github.com/akostadinov/websocket-echo-io/wiki/coverage/index.html)
+[![coverage](https://akostadinov.github.io/websocket-echo-io/badge.svg)](https://akostadinov.github.io/websocket-echo-io/)
 
 ## Installation
 
