@@ -1,6 +1,7 @@
 # Websocket::Echo::Io
 
 [![ruby-tests](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml/badge.svg)](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml)
+[![image-build](https://github.com/3scale/searchd/actions/workflows/container-image-buildah.yml/badge.svg)](https://github.com/3scale/searchd/actions/workflows/container-image-buildah.yml)
 [![coverage](https://akostadinov.github.io/websocket-echo-io/badge.svg)](https://akostadinov.github.io/websocket-echo-io/)
 
 ## Installation
@@ -18,6 +19,16 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ```
 $ websocket-echo-io
 ```
+
+## Usage as a container
+
+```
+$ podman run --rm ghcr.io/akostadinov/websocket-echo-io:latest
+```
+
+## Use the Heroku free tier service
+
+TODO
 
 ## Development
 
