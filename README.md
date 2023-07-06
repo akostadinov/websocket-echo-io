@@ -1,7 +1,7 @@
 # Websocket::Echo::Io
 
 [![ruby-tests](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml/badge.svg)](https://github.com/akostadinov/websocket-echo-io/actions/workflows/main.yml)
-[![image-build](https://github.com/3scale/searchd/actions/workflows/container-image-buildah.yml/badge.svg)](https://github.com/3scale/searchd/actions/workflows/container-image-buildah.yml)
+[![image-build](https://github.com/akostadinov/websocket-echo-io/actions/workflows/container-image-buildah.yml/badge.svg)](https://github.com/akostadinov/websocket-echo-io/actions/workflows/container-image-buildah.yml)
 [![coverage](https://akostadinov.github.io/websocket-echo-io/badge.svg)](https://akostadinov.github.io/websocket-echo-io/)
 
 ## Installation
