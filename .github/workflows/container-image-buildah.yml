@@ -21,6 +21,12 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
 jobs:
   buildah:
     runs-on: ubuntu-latest
