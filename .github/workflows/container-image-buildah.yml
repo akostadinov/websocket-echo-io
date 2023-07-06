@@ -91,7 +91,7 @@ jobs:
             podman run -d --pod-id-file=podid --name=ws-echo ${{ steps.build-image.outputs.image-with-tag }}-linux$arch
             sleep 3
             podman logs ws-echo
-            podman run --pod-id-file=podid --rm curlimages/curl -- localhost:3003 | grep "Upgrade connection to Websocket"
+            podman run --pod-id-file=podid --rm curlimages/curl -- -Ss --retry 15 --retry-connrefused --retry-delay 1 localhost:3003 | grep "Upgrade connection to Websocket"
             podman rm -f ws-echo
           done
 

@@ -23,7 +23,7 @@ $ websocket-echo-io
 ## Usage as a container
 
 ```
-$ podman run --rm ghcr.io/akostadinov/websocket-echo-io:latest
+$ podman run --rm -p 3003:3003 ghcr.io/akostadinov/websocket-echo-io:latest
 ```
 
 ## Use the Heroku free tier service
