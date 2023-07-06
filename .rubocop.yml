@@ -1,6 +1,12 @@
 require:
   - rubocop-performance
 
+# needed for github action CI `Unable to find gem panolint`, see
+# https://github.com/rubocop/rubocop/issues/9832
+inherit_mode:
+  merge:
+    - Exclude
+
 Lint:
   Enabled: true
 
