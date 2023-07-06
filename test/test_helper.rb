@@ -16,3 +16,4 @@ end
 require "websocket/echo/io"
 
 require "minitest/autorun"
+require "mocha/minitest"

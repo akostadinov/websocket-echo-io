@@ -67,7 +67,7 @@ Metrics/ClassLength:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.2
+  TargetRubyVersion: 3.0
   UseCache: true
   Exclude:
     - 'db/**/*'
