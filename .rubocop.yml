@@ -1,5 +1,7 @@
 require:
   - rubocop-performance
+  - rubocop-minitest
+  - rubocop-rake
 
 # needed for github action CI `Unable to find gem panolint`, see
 # https://github.com/rubocop/rubocop/issues/9832

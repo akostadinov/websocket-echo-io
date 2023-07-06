@@ -15,6 +15,7 @@ class Websocket::Echo::Io::TestServer < Minitest::Test # rubocop:disable Style/C
     Thread.new { Websocket::Echo::Io::Server.start }
 
     wait_for_running(5)
+
     assert wait_for_tcp(host: "localhost", port: Websocket::Echo::Io::Server::PORT)
 
     Iodine.connect url: "ws://localhost:3003", handler: client_handler

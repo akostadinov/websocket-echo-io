@@ -11,6 +11,8 @@ gem "minitest", "~> 5.18"
 gem "mocha"
 
 gem "rubocop", "~> 1.21"
+gem "rubocop-minitest", require: false
 gem "rubocop-performance", require: false
+gem "rubocop-rake", require: false
 
 gem "simplecov", require: false
