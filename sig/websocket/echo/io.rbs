@@ -5,7 +5,18 @@ module Websocket
       # See the writing guide of rbs: https://github.com/ruby/rbs#guides
 
       class Server
-        def self.start -> void
+        PORT: Integer
+
+        def self.start: -> void
+      end
+
+      class Handler
+        GOODBYE_LINE: String
+        SHUTDOWN_LINE: String
+
+        def on_message: -> void
+        def on_open: -> void
+        def on_shutdown: -> void
       end
     end
   end
