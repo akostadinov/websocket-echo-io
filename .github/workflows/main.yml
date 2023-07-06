@@ -26,3 +26,12 @@ jobs:
         bundler-cache: true
     - name: Run the default task
       run: bundle exec rake
+    - name: Deploy badge
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: coverage
+        destination_dir: coverage
+        keep_files: true
+        force_orphan: false
