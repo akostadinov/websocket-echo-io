@@ -13,7 +13,11 @@ module Websocket
 
         def on_message client, data
           client.write data
-          # client.close if data =~ /^bye[\n\r]/
+
+          if data =~ /^Goodbye\b/
+            client.write "See you in a bit."
+            client.close
+          end
         end
 
         def on_shutdown(client)
