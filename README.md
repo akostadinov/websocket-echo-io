@@ -30,6 +30,7 @@ $ podman run --rm -p 3003:3003 ghcr.io/akostadinov/websocket-echo-io:latest
 
 ```
 ws://websocket-echo-intustack.koyeb.app
+wss://websocket-echo-intustack.koyeb.app
 ```
 
 ## Development
