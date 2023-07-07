@@ -10,6 +10,8 @@ on:
     branches: [ main ]
   pull_request:
     types: [opened, reopened, synchronize]
+  tags:
+    - '*'           # Push events to every tag not containing /
 
 concurrency:
   group: ci-container-build-${{ github.ref }}-1
