@@ -28,7 +28,9 @@ $ podman run --rm -p 3003:3003 ghcr.io/akostadinov/websocket-echo-io:latest
 
 ## Access the public service
 
+```
 ws://websocket-echo-intustack.koyeb.app
+```
 
 ## Development
 
