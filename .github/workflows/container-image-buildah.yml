@@ -8,10 +8,10 @@ on:
     - cron: 7 7 * * 3
   push:
     branches: [ main ]
+    tags:
+      - '*'           # Push events to every tag not containing /
   pull_request:
     types: [opened, reopened, synchronize]
-  tags:
-    - '*'           # Push events to every tag not containing /
 
 concurrency:
   group: ci-container-build-${{ github.ref }}-1
