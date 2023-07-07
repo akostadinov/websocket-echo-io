@@ -6,7 +6,8 @@ module Websocket
   module Echo
     module Io
       class Server
-        PORT = 3003
+        # support heroku custom port
+        PORT = ENV["PORT"]&.to_i || 3003
 
         class << self
           def start
