@@ -26,9 +26,9 @@ $ websocket-echo-io
 $ podman run --rm -p 3003:3003 ghcr.io/akostadinov/websocket-echo-io:latest
 ```
 
-## Access the Heroku free tier service
+## Access the public service
 
-wss://websocket-echo-io-e86fd410ccb2.herokuapp.com/
+ws://websocket-echo-intustack.koyeb.app
 
 ## Development
 
@@ -45,7 +45,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/akosta
 - update `lib/websocket/echo/io/version.rb`
 - `gem build websocket-echo-io.gemspec`
 - create a github release and tag
-- deploy to heroku with the github action
+- deploy to koyeb.com unless using a moving tag there already
 
 ## License
 
