@@ -31,6 +31,12 @@ module Websocket
 
             Iodine.listen service: :ws, address: "::", port: PORT, handler: app
             Iodine.start
+
+            # in case long term running clogs the server, hot restart regularly
+            # see https://github.com/boazsegev/iodine#hot-restart
+            # Iodine.run_every(4 * 60 * 60 * 1000) do
+            #   Process.kill("SIGUSR1", Process.pid) unless Iodine.worker?
+            # end
           end
         end
       end
