@@ -29,7 +29,7 @@ module Websocket
               # :nocov:
             end
 
-            Iodine.listen service: :ws, address: "::", port: PORT, handler: app
+            Iodine.listen service: :ws, address: "::", port: PORT, handler: app # max_msg: 128
             Iodine.start
 
             # in case long term running clogs the server, hot restart regularly
