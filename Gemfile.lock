@@ -9,7 +9,7 @@ GEM
   specs:
     ast (2.4.2)
     docile (1.4.0)
-    iodine (0.7.55)
+    iodine (0.7.56)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     minitest (5.18.1)
