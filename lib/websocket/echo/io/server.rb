@@ -24,7 +24,7 @@ module Websocket
                 [0, {}, []] # It's possible to set cookies for the response.
               else
                 body = "Upgrade connection to Websocket to enter echo mode."
-                [405, { "Content-Length" => body.bytesize, "Content-Type" => "text/plain" }, [body]]
+                [418, { "Content-Length" => body.bytesize, "Content-Type" => "text/plain" }, [body]]
               end
               # :nocov:
             end
