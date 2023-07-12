@@ -24,12 +24,12 @@ module Websocket
                 [0, {}, []] # It's possible to set cookies for the response.
               else
                 body = "Upgrade connection to Websocket to enter echo mode."
-                [405, { "Content-Length" => body.bytesize, "Content-Type" => "text/plain" }, [body]]
+                [418, { "Content-Length" => body.bytesize, "Content-Type" => "text/plain" }, [body]]
               end
               # :nocov:
             end
 
-            Iodine.listen service: :ws, address: "::", port: PORT, handler: app
+            Iodine.listen service: :ws, address: "::", port: PORT, handler: app # max_msg: 128
             Iodine.start
 
             # in case long term running clogs the server, hot restart regularly

@@ -29,3 +29,4 @@ vendor/cache
 # IDE local settings
 .vscode
 .idea
+websocket-echo-io.iml
