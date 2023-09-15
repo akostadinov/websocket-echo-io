@@ -35,7 +35,7 @@ jobs:
     steps:
       # Allow multi-target builds
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
         with:
           platforms: arm64
       # Login against a Docker registry except on PR
