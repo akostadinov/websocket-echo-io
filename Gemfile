@@ -10,7 +10,7 @@ gem "rake", "~> 13.0"
 gem "minitest", "~> 5.20"
 gem "mocha"
 
-gem "rubocop", "~> 1.56"
+gem "rubocop", "~> 1.57"
 gem "rubocop-minitest", require: false
 gem "rubocop-performance", require: false
 gem "rubocop-rake", require: false
