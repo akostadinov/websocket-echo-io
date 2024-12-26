@@ -44,6 +44,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: "coverage/"
+        overwrite: true
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
       id: deployment
