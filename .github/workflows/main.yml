@@ -37,15 +37,15 @@ jobs:
       run: .github/workflows/bin/coverage_badge.sh
 
     - name: Setup Pages
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
       uses: actions/configure-pages@v5
     - name: Upload artifact
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
       uses: actions/upload-pages-artifact@v3
       with:
         path: "coverage/"
         overwrite: true
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
       id: deployment
       uses: actions/deploy-pages@v4
