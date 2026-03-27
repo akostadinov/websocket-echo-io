@@ -48,4 +48,4 @@ jobs:
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
