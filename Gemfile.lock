@@ -2,14 +2,14 @@ PATH
   remote: .
   specs:
     websocket-echo-io (0.1.0)
-      iodine (~> 0.7.55)
+      iodine (~> 0.7.55, != 0.7.59)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
     docile (1.4.0)
-    iodine (0.7.59)
+    iodine (0.7.58)
     json (2.19.3)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
