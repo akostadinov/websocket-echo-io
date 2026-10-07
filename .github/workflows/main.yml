@@ -44,7 +44,6 @@ jobs:
       uses: actions/upload-pages-artifact@v5
       with:
         path: "coverage/"
-        overwrite: true
 
   deploy:
     needs: build
