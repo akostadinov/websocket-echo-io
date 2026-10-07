@@ -20,8 +20,8 @@ jobs:
     strategy:
       matrix:
         ruby:
+          - '4.0.5'
           - '3.0.4'
-          - '3.2.2'
 
     steps:
     - uses: actions/checkout@v6
@@ -37,15 +37,15 @@ jobs:
       run: .github/workflows/bin/coverage_badge.sh
 
     - name: Setup Pages
-      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '4.0.5'
       uses: actions/configure-pages@v6
     - name: Upload artifact
-      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '4.0.5'
       uses: actions/upload-pages-artifact@v5
       with:
         path: "coverage/"
         overwrite: true
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main' && matrix.ruby == '3.2.2'
+      if: github.ref == 'refs/heads/main' && matrix.ruby == '4.0.5'
       id: deployment
       uses: actions/deploy-pages@v5
