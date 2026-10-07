@@ -45,7 +45,15 @@ jobs:
       with:
         path: "coverage/"
         overwrite: true
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main' && matrix.ruby == '4.0.5'
-      id: deployment
-      uses: actions/deploy-pages@v5
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
