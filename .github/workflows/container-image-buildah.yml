@@ -68,7 +68,7 @@ jobs:
         id: build-image
         # Pin to commit with OCIv1.Architecture fix (PR #207).
         # v3.1.0 and earlier have lowercase .architecture which breaks Go template evaluation.
-        uses: redhat-actions/buildah-build@67577a506c56f60a4c7205bfc994a003f33fba8b
+        uses: redhat-actions/buildah-build@3f7ef4f0e61d6d1def3bf4fdd77798afca03428b
         with:
           tags: ${{ steps.meta.outputs.tags }}
           platforms: linux/amd64,linux/arm64
