@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     websocket-echo-io (0.1.0)
-      iodine (>= 0.7.55, < 0.9.0, != 0.7.59)
+      iodine (~> 0.7.55, != 0.7.59)
 
 GEM
   remote: https://rubygems.org/
@@ -63,7 +63,9 @@ GEM
     unicode-emoji (4.3.0)
 
 PLATFORMS
+  aarch64-linux-musl
   x86_64-linux
+  x86_64-linux-musl
 
 DEPENDENCIES
   minitest (~> 5.26)
